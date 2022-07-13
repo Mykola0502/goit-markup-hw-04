@@ -164,11 +164,22 @@ img {
   margin-right: auto;
 }
 
+.icon-letter {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.icon-phone {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .header-contacts-link {
   color: var(--primary-text-color);
-  display: block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 }
 
 .header-contacts-link:hover,
@@ -250,17 +261,28 @@ img {
   padding-bottom: 94px;
 }
 
-.feature-list {
+.features-list {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
 }
 
-.feature-item {
+.features-item {
   flex-basis: calc((100% - var(--indent) * 3) / 4);
 }
 
-.feature-subtitle {
+.features-thumb {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-secondary-color);
+  border-radius: 4px;
+}
+
+.features-subtitle {
   margin-bottom: 10px;
   color: var(--title-text-color);
 
@@ -332,6 +354,34 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.networks-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.networks-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+}
+
+.networks-link:hover,
+.networks-link:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.networks-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
 }
 
 /* Футер */
