@@ -28,6 +28,7 @@
   --accent-color: #2196f3;
   --btn-hover-color: #188ce8;
   --border-color: #eeeeee;
+  --icon-color: #afb1b8;
 
   /* others */
   --indent: 30px;
@@ -356,6 +357,10 @@ img {
   text-align: center;
 }
 
+.team-description {
+  margin-bottom: 16px;
+}
+
 .networks-list {
   display: flex;
   gap: 10px;
@@ -369,7 +374,7 @@ img {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  color: #afb1b8;
+  color: var(--icon-color);
 }
 
 .networks-link:hover,
@@ -382,12 +387,50 @@ img {
   fill: currentColor;
 }
 
+/* Постійні клієнти */
+
+.clients-list {
+  display: flex;
+  gap: var(--indent);
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-link {
+  display: inline-flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.clients-link:hover {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
 /* Футер */
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-footer-color);
+}
+
+.footer-menu {
+  display: flex;
+}
+
+.contacts-thumb {
+  width: 231px;
+  margin-right: 70px;
 }
 
 .footer .logo {
@@ -427,6 +470,16 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.social-subtitle {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
 }
 
 /* Портфоліо */
